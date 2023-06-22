@@ -86,7 +86,7 @@ const Navigation = () => {
         },
       };
 
-      const { data } = await axios.post(`/chat`, { userId }, config);
+      const { data } = await axios.post(`/chats`, { userId }, config);
 
       const existingChat = chats.find((c) => c._id === data._id);
       if (!existingChat) {

@@ -20,7 +20,7 @@ const Chats = ({ fetchAgain }) => {
         },
       };
 
-      const { data } = await axios.get("/chat", config);
+      const { data } = await axios.get("/chats", config);
       setChats(data);
     } catch (error) {
       toast({

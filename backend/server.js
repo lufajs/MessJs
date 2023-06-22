@@ -12,7 +12,7 @@ app.use(express.json());
 const chatRoutes = require("./routes/chatRoutes");
 const authRoutes = require("./routes/authRoutes");
 
-app.use("/chat", chatRoutes);
+app.use("/chats", chatRoutes);
 app.use("/auth", authRoutes);
 
 const __dirname1 = path.resolve();
