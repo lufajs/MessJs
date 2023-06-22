@@ -9,7 +9,8 @@ import "./style.css";
 
 import io from "socket.io-client";
 
-const ENDPOINT = "https://messjs.onrender.com";
+const ENDPOINT = "http://localhost:8080";
+// const ENDPOINT = "https://messjs.onrender.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -64,7 +65,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "/chat/msg",
+          "/chats/msg",
           {
             content: newMessage,
             chatId: selectedChat,
