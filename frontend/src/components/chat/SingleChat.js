@@ -9,7 +9,7 @@ import "./style.css";
 
 import io from "socket.io-client";
 
-const ENDPOINT = "https://messjs.onrender.com";
+const ENDPOINT = "http://localhost:8080";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
